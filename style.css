@@ -18,6 +18,7 @@ body .container {
   border-radius: 3px;
   background: #fff;
   border-color: transparent;
+  font-size: 1.2rem;
 }
 
 #filter-buttons button:hover {
@@ -43,16 +44,6 @@ body .container {
 
 #filterable-cards .card.hide {
   display: none;
-}
-
-@media (max-width: 600px) {
-  #filterable-cards {
-    justify-content: center;
-  }
-
-  #filterable-cards .card {
-    width: calc(100% / 2 - 10px);
-  }
 }
 
 .modal {
@@ -97,4 +88,43 @@ body .container {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+  #filter-buttons button {
+    font-size: 1rem;
+}
+}
+
+@media (min-width: 700px) and (max-width : 1090px) {
+  .all_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button_filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1091px) {
+    .all_card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+    .button_filter {
+      margin: 0 auto;
+      margin-left: 4%;
+  }
 }
